@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Nuget Restore
+
+mono ./.nuget/NuGet.exe restore BugRepro.sln
+
 # Build
 
 xbuild ./BugRepro.Tests/BugRepro.Tests.csproj
